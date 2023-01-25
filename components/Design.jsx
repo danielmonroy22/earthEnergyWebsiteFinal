@@ -6,7 +6,7 @@ const Design = () => {
 
             <div className='papa min-h-screen  flex flex-col  md:flex-row  '>
 
-                <div className="w-[100%] md:w-[70%] h-[500px] md:h-screen  bg-cover bg-center bg-no-repeat md:bg-cover" style={{ backgroundImage: "url('../assets/HomePage3.jpg')" }} />
+                <div className="w-[100%] md:w-[70%] h-[500px] md:h-screen  bg-cover bg-center bg-no-repeat md:bg-cover" style={{ backgroundImage: "url('../assets/HomePage5.jpg')" }} />
 
                 <div className=' md:w-[30%] w-full md:h-screen h-[50%] flex flex-col justify-between '>
                     <div className='p-10'>
