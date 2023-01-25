@@ -27,7 +27,7 @@ const HomePage = () => {
     return (
 
 
-        <div className='h-screen shadow-xl  ' >
+        <div className='h-screen shadow-xl mainDiv  ' >
             <Image
                 className='h-screen z-[-1]'
                 src={bg}
