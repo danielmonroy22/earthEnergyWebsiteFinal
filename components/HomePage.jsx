@@ -14,8 +14,7 @@ import { FaSolarPanel, GiMoneyStack } from 'react-icons/fa';
 
 const MyDiv = styled.div`
     background-image: url('../assets/HomePage1.jpg');
-    background-color: black;
-    
+  
   
   
  
@@ -35,7 +34,7 @@ const HomePage = () => {
 
                 <div className='h-[85%] flex items-center flex-col justify-between  '>
 
-                    <div className='text-white text-center font-medium text-4xl p-10 mt-44 Slogan md:text-4xl md:p-0 '>
+                    <div className='text-white text-center font- text-4xl p-10 mt-44 Slogan md:text-4xl md:p-0 '>
                         <h1>  Powering a brighter future with solar energy </h1>
 
 

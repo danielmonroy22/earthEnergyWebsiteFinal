@@ -4,7 +4,7 @@ import { faBeer, faCertificate } from '@fortawesome/free-solid-svg-icons'
 
 const AboutUs = () => {
     return (
-        <div className=' min-h-screen bg-cover bg-center bg-no-repeat md:bg-cover' style={{ backgroundImage: "url('../assets/AboutUs1.jpg')" }}>
+        <div className=' min-h-screen bg-cover bg-center bg-no-repeat md:bg-cover' style={{ backgroundImage: 'url("../assets/AboutUs1.jpg")' }}>
             <div className='min-h-screen text-center z-0  ' style={{ background: '#000000', opacity: '0.5' }}>
                 <div className='md:px-10 pt-10 px-0 z-10 '>
                     <div >
