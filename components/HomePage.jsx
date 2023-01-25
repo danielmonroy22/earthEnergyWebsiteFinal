@@ -1,6 +1,8 @@
 import React from 'react'
 import Navbar from 'components/Navbar';
 import styled from '@emotion/styled';
+import bg from '../public/assets/HomePage1.jpg'
+import Image from 'next/image';
 
 import { FaSolarPanel, GiMoneyStack } from 'react-icons/fa';
 
@@ -12,27 +14,36 @@ import { FaSolarPanel, GiMoneyStack } from 'react-icons/fa';
 
 
 
-const MyDiv = styled.div`
-    background-image: url('../assets/HomePage1.jpg');
-  
-  
-  
- 
+// const MyDiv = styled.div`
+//     background-image: url(${bg.src});
 
-`;
+
+
+
+
+// `;
 
 const HomePage = () => {
     return (
 
 
-        <MyDiv className='h-screen shadow-xl bg-cover bg-center bg-no-repeat md:bg-cover  ' >
+        <div className='h-screen shadow-xl  ' >
+            <Image
+                className='h-screen z-[-1]'
+                src={bg}
+                alt="Pexels"
+                layout='fill'
+                objectFit='cover'
+                objectPosition='center'
+            />
             <div className='bg-gradient-to-t from-black via-transparent to-transparent w-full h-full align-bottom opacity '>
+
 
 
 
                 <Navbar />
 
-                <div className='h-[85%] flex items-center flex-col justify-between  '>
+                <div className='h-[85%] flex items-center flex-col justify-between '>
 
                     <div className='text-white text-center font- text-4xl p-10 mt-44 Slogan md:text-4xl md:p-0 '>
                         <h1>  Powering a brighter future with solar energy </h1>
@@ -92,7 +103,7 @@ const HomePage = () => {
             </div>
 
 
-        </MyDiv>
+        </div>
 
 
 
