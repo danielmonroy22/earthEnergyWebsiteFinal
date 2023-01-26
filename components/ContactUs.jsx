@@ -2,7 +2,7 @@ import React from 'react'
 
 const ContactUs = () => {
     return (
-        <div className='h-screen'>
+        <div id='contact' className='h-screen px-10 md:px-0'>
             <div className='text-center pt-20 '>
                 <h1 className='font-semibold text-4xl pb-5'>Thinking About Going Solar?</h1>
                 <h2>Get a quote from one of our hundreds of Earth energy Partner installers.</h2>

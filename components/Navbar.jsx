@@ -34,6 +34,14 @@ const Navbar = () => {
         setNav(!nav);
     };
 
+    function handleClick(event) {
+        event.preventDefault();
+        const target = event.target.getAttribute('href');
+        const finalTarget = target.substring(1);
+        const element = document.querySelector(finalTarget);
+        element.scrollIntoView({ behavior: 'smooth' });
+    }
+
     useEffect(() => {
         const handleShadow = () => {
             if (window.scrollY >= 90) {
@@ -68,32 +76,30 @@ const Navbar = () => {
                 </Link>
                 <div>
                     <ul style={{ color: `white` }} className='hidden md:flex'>
-                        <li className='ml-10 text-sm uppercase hover:border-b'>
+                        <li className='ml-10 text-sm font-semibold uppercase hover:border-b'>
                             <Link href='/'>Home</Link>
                         </li>
-                        <li className='ml-10 text-sm uppercase hover:border-b'>
-                            <Link href='/#about'>About</Link>
+                        <li className='ml-10 text-sm font-semibold uppercase hover:border-b'>
+                            <Link href='/#residential' onClick={handleClick}>Residential</Link>
                         </li>
-                        <li className='ml-10 text-sm uppercase hover:border-b'>
-                            <Link href='/#skills'>Skills</Link>
+                        <li className='ml-10 text-sm font-semibold uppercase hover:border-b'>
+                            <Link href='/#commercial' onClick={handleClick}>Commercial</Link>
                         </li>
-                        <li className='ml-10 text-sm uppercase hover:border-b'>
-                            <Link href='/#projects'>Projects</Link>
+                        <li className='ml-10 text-sm font-semibold uppercase hover:border-b'>
+                            <Link href='/#about' onClick={handleClick}>About Us</Link>
                         </li>
-                        <li className='ml-10 text-sm uppercase hover:border-b'>
-                            <Link href='/DanielResume.pdf'>Resume</Link>
+                        <li className='ml-10 text-sm font-semibold uppercase hover:border-b'>
+                            <Link href='/#contact' onClick={handleClick}>Contact Us</Link>
                         </li>
-                        <li className='ml-10 text-sm uppercase hover:border-b'>
-                            <Link href='/#contact'>Contact</Link>
-                        </li>
+
                     </ul>
                     {/* Hamburger Icon */}
                     <div
                         style={{ color: `${linkColor}` }}
                         onClick={handleNav}
-                        className='md:hidden'
+                        className='md:hidden '
                     >
-                        <AiOutlineMenu size={25} />
+                        <AiOutlineMenu className='text-white' size={25} />
                     </div>
                 </div>
             </div>
@@ -102,7 +108,7 @@ const Navbar = () => {
             {/* Overlay */}
             <div
                 className={
-                    nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''
+                    nav ? 'md:hidden z-50 fixed left-0 top-0 w-full h-screen bg-black/70' : ''
                 }
             >
                 {/* Side Drawer Menu */}
@@ -123,7 +129,7 @@ const Navbar = () => {
                     height='35'
                     alt='/'
                   /> */}
-                                Daniel Monroy
+                                Logo
 
                             </Link>
                             <div
@@ -133,11 +139,7 @@ const Navbar = () => {
                                 <AiOutlineClose />
                             </div>
                         </div>
-                        <div className='border-b border-gray-300 my-4'>
-                            <p className='w-[85%] md:w-[90%] py-4'>
-                                Let&#39;s build something legendary together
-                            </p>
-                        </div>
+
                     </div>
                     <div className='py-4 flex flex-col'>
                         <ul className='uppercase'>
@@ -146,37 +148,33 @@ const Navbar = () => {
                                     Home
                                 </li>
                             </Link>
+                            <Link href='/#residential'>
+                                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                                    Residential
+                                </li>
+                            </Link>
+                            <Link href='/#commercial'>
+                                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                                    Commercial
+                                </li>
+                            </Link>
                             <Link href='/#about'>
                                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                                    About
-                                </li>
-                            </Link>
-                            <Link href='/#skills'>
-                                <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                                    Skills
-                                </li>
-                            </Link>
-                            <Link href='/#projects'>
-                                <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                                    Projects
-                                </li>
-                            </Link>
-                            <Link href='/DanielResume.pdf'>
-                                <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                                    Resume
+                                    About Us
                                 </li>
                             </Link>
                             <Link href='/#contact'>
                                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                                    Contact
+                                    Contact Us
                                 </li>
                             </Link>
+
                         </ul>
-                        <div className='pt-40'>
+                        {/* <div className='pt-40'>
                             <p className='uppercase tracking-widest text-[#5651e5]'>
                                 Let&#39;s Connect
                             </p>
-                            <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
+                            {/* <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                                 <a
                                     href='https://www.linkedin.com/in/danielmonroydev'
                                     target='_blank'
@@ -211,8 +209,8 @@ const Navbar = () => {
                                         <BsFillPersonLinesFill />
                                     </div>
                                 </Link>
-                            </div>
-                        </div>
+                            </div> 
+                        </div> */}
                     </div>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from 'components/Navbar';
 import styled from '@emotion/styled';
-import bg from '../public/assets/HomePage1.jpg'
+import bg from '../public/assets/HomePage4.jpg'
 import Image from 'next/image';
 
 import { FaSolarPanel, GiMoneyStack } from 'react-icons/fa';
@@ -36,7 +36,7 @@ const HomePage = () => {
                 objectFit='cover'
                 objectPosition='center'
             />
-            <div className='bg-gradient-to-t from-black via-transparent to-transparent w-full h-full align-bottom opacity '>
+            <div className='bg-[#00000080] w-full h-full align-bottom opacity '>
 
 
 
@@ -45,8 +45,12 @@ const HomePage = () => {
 
                 <div className='h-[85%] flex items-center flex-col justify-between '>
 
-                    <div className='text-white text-center font- text-4xl p-10 mt-44 Slogan md:text-4xl md:p-0 '>
-                        <h1>  Powering a brighter future with solar energy </h1>
+                    <div className='text-white text-center    text-4xl  mt-44 Slogan md:text-4xl md:p-0 '>
+
+                        <h1 className='font-semibold  px-10 py-5'> Bringing sunshine to your life and home </h1>
+
+
+
 
 
                     </div>
@@ -87,7 +91,7 @@ const HomePage = () => {
                         </div>
                         <div className='md:w-auto w-full    flex justify-center items-center mt-10 md:mt-0' >
                             <button class="relative inline-flex items-center justify-center  overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
-                                <span class="relative px-10 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                                <span class="relative px-10 py-2.5 transition-all ease-in duration-75 bg-white text-black rounded-md group-hover:bg-opacity-0">
                                     Order Now
                                 </span>
                             </button>
