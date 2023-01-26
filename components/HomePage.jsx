@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from 'components/Navbar';
 import styled from '@emotion/styled';
-import bg from '../public/assets/HomePage4.jpg'
+import bg from '../public/assets/HomePage8.jpg'
 import Image from 'next/image';
 
 import { FaSolarPanel, GiMoneyStack } from 'react-icons/fa';
