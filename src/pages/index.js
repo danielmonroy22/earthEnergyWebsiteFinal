@@ -7,6 +7,9 @@ import Savings from 'components/Savings'
 import Design from 'components/Design'
 import AboutUs from 'components/AboutUs'
 import ContactUs from 'components/ContactUs'
+import Footer from 'components/Footer'
+import { Helmet } from 'react-helmet';
+
 
 
 
@@ -18,7 +21,10 @@ export default function Home() {
         <title>Earth Energy Power</title>
         <meta name="description" content="We are a solar company providing design, installation, and maintenance services. Our experts will help you find the best solar solution for your needs." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <Helmet>
+          <link rel="icon" href="/HeadIcon.png" type="image/png" />
+        </Helmet>
+
         <meta name="robots" content="all" />
       </Head>
       <main>
@@ -30,6 +36,7 @@ export default function Home() {
         <Design />
         <AboutUs />
         <ContactUs />
+        <Footer />
       </main>
 
     </>
