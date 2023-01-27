@@ -8,7 +8,7 @@ import icon3 from '../public/assets/get-money.png'
 
 const AboutUs = () => {
     return (
-        <div className='min-h-[60vh]  p-24 '>
+        <div className='md:min-h-[60vh] min-h-screen w-full md:p-24 p-0 '>
             <div id='about' className=' rounded-xl  min-h-[50vh] bg-cover bg-center bg-no-repeat md:bg-cover' style={{ backgroundImage: 'url("../assets/AboutUs5.jpg")' }}>
                 <div className=' rounded-xl min-h-[50vh] text-center z-0 bg-[#00000080]   '>
                     <div className='md:px-10 pt-10 px-0 z-10 '>
@@ -17,7 +17,7 @@ const AboutUs = () => {
 
                         </div>
 
-                        <div className='w-full px-10 md:px-0  flex flex-col md:flex-row md:gap-10 md:pt-24 pt-10'>
+                        <div className='w-full px-10 md:px-0 gap-10 flex flex-col md:flex-row md:gap-10 md:pt-24 pt-10'>
                             <div className='md:w-[33%] w-full  text-white '>
                                 {/* icon */}
                                 <div className='w-full h-32  flex justify-center items-center   ' >
