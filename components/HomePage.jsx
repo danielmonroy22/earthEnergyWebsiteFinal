@@ -29,7 +29,7 @@ const HomePage = () => {
 
         <div className='h-screen shadow-xl mainDiv  ' >
             <Image
-                className='h-screen z-[-1]'
+                className='min-h-screen z-[-1]'
                 src={bg}
                 alt="Pexels"
                 layout='fill'
