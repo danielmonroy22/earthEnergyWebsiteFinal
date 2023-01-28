@@ -123,14 +123,13 @@ const Navbar = () => {
                     <div>
                         <div className='flex w-full items-center justify-between'>
                             <Link href='/'>
+                                <Image
+                                    src={LogoImage}
+                                    alt='/'
+                                    width='130'
 
-                                {/* <Image
-                    src={NavLogo}
-                    width='87'
-                    height='35'
-                    alt='/'
-                  /> */}
-                                Logo
+                                    className='cursor-pointer'
+                                />
 
                             </Link>
                             <div
@@ -144,31 +143,31 @@ const Navbar = () => {
                     </div>
                     <div className='py-4 flex flex-col'>
                         <ul className='uppercase'>
-                            <Link href='/'>
+                            <Link href='/' >
                                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                                     Home
                                 </li>
                             </Link>
-                            <Link href='/#residential'>
-                                <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                                    Residential
-                                </li>
-                            </Link>
-                            <Link href='/#commercial'>
-                                <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                                    Commercial
-                                </li>
-                            </Link>
-                            <Link href='/#about'>
-                                <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                                    About Us
-                                </li>
-                            </Link>
-                            <Link href='/#contact'>
-                                <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                                    Contact Us
-                                </li>
-                            </Link>
+
+                            <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                                <Link href='/#residential' onClick={handleClick}> Residential      </Link>
+                            </li>
+
+
+                            <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                                <Link href='/#commercial' onClick={handleClick}>   Commercial  </Link>
+                            </li>
+
+
+                            <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                                <Link href='/#about' onClick={handleClick}>   About Us   </Link>
+                            </li>
+
+
+                            <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                                <Link href='/#contact' onClick={handleClick}>  Contact Us   </Link>
+                            </li>
+
 
                         </ul>
                         {/* <div className='pt-40'>

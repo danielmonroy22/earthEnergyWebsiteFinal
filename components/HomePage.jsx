@@ -2,9 +2,11 @@ import React from 'react'
 import Navbar from 'components/Navbar';
 import styled from '@emotion/styled';
 import bg from '../public/assets/HomePage8.jpg'
+import homePageIcon from '../public/assets/discount.png'
 import Image from 'next/image';
+import Link from 'next/link';
 
-import { FaSolarPanel, GiMoneyStack } from 'react-icons/fa';
+import { FaSolarPanel, GiMoneyStack, FaHandHoldingUsd } from 'react-icons/fa';
 
 
 
@@ -24,6 +26,13 @@ import { FaSolarPanel, GiMoneyStack } from 'react-icons/fa';
 // `;
 
 const HomePage = () => {
+    function handleClick(event) {
+        event.preventDefault();
+        const target = event.target.getAttribute('href');
+        const finalTarget = target.substring(1);
+        const element = document.querySelector(finalTarget);
+        element.scrollIntoView({ behavior: 'smooth' });
+    }
     return (
 
 
@@ -54,45 +63,51 @@ const HomePage = () => {
 
 
                     </div>
-                    <div className='flex flex-col gap-0 text-white md:gap-10 md:flex-row  '>
+                    <div className='flex flex-col gap-10 text-white md:gap-10 md:flex-row  '>
                         <div className='icons and text flex md:gap-10 px-10 md:px-0'>
 
 
                             <div className='h-16 flex flex-col items-center justify-center gap-0 md:gap-2'>
-                                <div className=' items-center flex justify-center pb-5 md:pb-0'>
+
+                                <div className='  md:text-3xl text-2xl items-center flex justify-center pb-5 md:pb-0'>
                                     <FaSolarPanel />
                                 </div>
 
-                                <div class="description text-center">
+                                <div class="description text-center font-semibold">
                                     Convert Sunlight to Energy
                                 </div>
 
-
                             </div>
                             <div className='h-16 flex flex-col items-center justify-center gap-0 md:gap-2'>
-                                <div className=' items-center flex justify-center pb-5 md:pb-0'>
-                                    <FaSolarPanel />
+
+
+                                <div className=' md:text-3xl text-3xl items-center flex justify-center pb-5 md:pb-0'>
+                                    <FaHandHoldingUsd />
                                 </div>
 
-                                <div class="description text-center">
-                                    Convert Sunlight to Energy
+                                <div class="description text-center font-semibold">
+                                    Value Priced, Quality Assured
                                 </div>
                             </div>
                             <div className='h-16 flex flex-col items-center justify-center gap-0 md:gap-2'>
-                                <div className=' items-center flex justify-center pb-4 md:pb-0'>
+                                <div className=' md:text-2xl text-2xl items-center flex justify-center pb-4 md:pb-0'>
 
                                     24/7
                                 </div>
 
-                                <div class="description text-center">
-                                    Convert Sunlight to Energy
+                                <div class="description text-center font-semibold">
+                                    Solar Solutions, Always On
                                 </div>
                             </div>
                         </div>
                         <div className='md:w-auto w-full    flex justify-center items-center mt-10 md:mt-0' >
                             <button class="relative inline-flex items-center justify-center  overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
-                                <span class="relative px-10 py-2.5 transition-all ease-in duration-75 bg-white text-black rounded-md group-hover:bg-opacity-0">
-                                    Order Now
+                                <span class="relative px-10 py-2.5 transition-all ease-in duration-75 bg-white text-black rounded-md group-hover:bg-opacity-0 hover:text-white">
+                                    <Link href='#contact' onClick={handleClick}>
+                                        Contact Us
+
+                                    </Link>
+
                                 </span>
                             </button>
 
