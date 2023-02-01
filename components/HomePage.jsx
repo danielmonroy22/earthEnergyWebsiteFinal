@@ -36,16 +36,16 @@ const HomePage = () => {
     return (
 
 
-        <div className='h-screen shadow-xl mainDiv  ' >
-            <Image
-                className='min-h-screen z-[-1]'
+        <div className='h-screen shadow-xl mainDiv bg-cover bg-center bg-no-repeat md:bg-cover ' style={{ backgroundImage: "url('../assets/HomePage2.jpg')" }} >
+            {/* <Image
+                className='z-[-1]'
                 src={bg}
                 alt="Pexels"
                 layout='fill'
                 objectFit='cover'
                 objectPosition='center'
-            />
-            <div className='bg-[#00000080] w-full h-full align-bottom opacity '>
+            /> */}
+            <div className='bg-[#00000080] w-full h-full align-bottom opacity '  >
 
 
 
@@ -122,7 +122,7 @@ const HomePage = () => {
             </div>
 
 
-        </div>
+        </div >
 
 
 

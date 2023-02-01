@@ -25,11 +25,19 @@ html {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 
+
 }
+
+
 
 .Slogan {
   -webkit-animation: focus-in-expand-fwd 1.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation: focus-in-expand-fwd 1.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* About us */
+.aboutUsDiv {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 @-webkit-keyframes focus-in-expand-fwd {

@@ -8,9 +8,9 @@ import icon3 from '../public/assets/get-money.png'
 
 const AboutUs = () => {
     return (
-        <div className='md:min-h-[60vh] min-h-screen w-full md:p-24 p-0 '>
-            <div id='about' className=' rounded-xl  min-h-[50vh] bg-cover bg-center bg-no-repeat md:bg-cover' style={{ backgroundImage: 'url("../assets/AboutUs5.jpg")' }}>
-                <div className=' rounded-xl min-h-[50vh] text-center z-0 bg-[#00000080]   '>
+        <div className='md:min-h-[100vh] min-h-screen w-full  '>
+            <div id='about' className=' rounded-xl  min-h-[100vh] bg-cover bg-center bg-no-repeat md:bg-cover flex justify-center items-center' style={{ backgroundImage: 'url("../assets/AboutUs1.jpg")' }}>
+                <div className=' rounded-xl min-h-[50vh] text-center z-0  aboutUsDiv '>
                     <div className='md:px-10 pt-10 px-0 z-10 '>
                         <div className='px-5 md:px-0' >
                             <h1 className='text-white text-4xl font-semibold text-shadow-xl  '>Leading the way in solar energy solutions</h1>
