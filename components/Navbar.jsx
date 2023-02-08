@@ -64,17 +64,20 @@ const Navbar = () => {
             }
         >
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16 text-white'>
-                <Link href='/'>
+                <div className='‹ pt-20'>
+                    <Link href='/'>
 
-                    <Image
-                        src={LogoImage}
-                        alt='/'
-                        width='130'
+                        <Image
+                            src={LogoImage}
+                            alt='/'
+                            width='200'
 
-                        className='cursor-pointer'
-                    />
 
-                </Link>
+                            className='cursor-pointer '
+                        />
+
+                    </Link>
+                </div>
                 <div>
                     <ul style={{ color: `white` }} className='hidden md:flex'>
                         <li className='ml-10 text-sm font-semibold uppercase hover:border-b'>
