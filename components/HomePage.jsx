@@ -54,9 +54,9 @@ const HomePage = () => {
 
                 <div className='h-[85%] flex items-center flex-col justify-between '>
 
-                    <div className='text-white text-center    text-4xl  mt-44 Slogan md:text-4xl md:p-0 '>
+                    <div className='text-white text-center   text-3xl lg:text-4xl  mt-44 Slogan md:text-4xl md:p-0 '>
 
-                        <h1 className='font-semibold  px-10 py-5'> Bringing sunshine to your life and home </h1>
+                        <h1 className='font-semibold  px-10 py-5 '> Save Up to 40% on your electric bill </h1>
 
 
 
