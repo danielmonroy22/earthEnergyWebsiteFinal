@@ -29,14 +29,34 @@ export default function Home() {
       </Head>
       <main>
 
+        <section>
+          <HomePage />
 
+        </section>
+        <section>
+          <Savings />
 
-        <HomePage />
-        <Savings />
-        <Design />
-        <AboutUs />
-        <ContactUs />
+        </section>
+        <section>
+          <Design />
+
+        </section>
+        <section>
+          <AboutUs />
+
+        </section>
+        <section>
+          <ContactUs />
+
+        </section>
         <Footer />
+
+
+
+
+
+
+
       </main>
 
     </>

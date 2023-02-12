@@ -17,6 +17,17 @@ html {
   scroll-behavior: smooth;
 }
 
+main {
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-snap-align: center;
+
+}
+
 
 
 /* HomePage */
@@ -27,6 +38,7 @@ html {
 
 
 }
+
 
 
 

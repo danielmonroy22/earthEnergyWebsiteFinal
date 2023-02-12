@@ -64,16 +64,17 @@ const Navbar = () => {
             }
         >
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16 text-white'>
-                <div className='‹ pt-20'>
+                <div className='‹ md:pt-20 pt-8'>
                     <Link href='/'>
 
                         <Image
                             src={LogoImage}
                             alt='/'
-                            width='200'
+
+                            priority
 
 
-                            className='cursor-pointer '
+                            className='cursor-pointer md:w-[200px] w-[150px]'
                         />
 
                     </Link>
@@ -119,7 +120,7 @@ const Navbar = () => {
                 <div
                     className={
                         nav
-                            ? ' fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500'
+                            ? ' fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-black p-10 ease-in duration-500'
                             : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
                     }
                 >
@@ -139,35 +140,35 @@ const Navbar = () => {
                                 onClick={handleNav}
                                 className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'
                             >
-                                <AiOutlineClose />
+                                <AiOutlineClose className='text-white' />
                             </div>
                         </div>
 
                     </div>
                     <div className='py-4 flex flex-col'>
-                        <ul className='uppercase'>
+                        <ul className='uppercase '>
                             <Link href='/' >
-                                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                                <li onClick={() => setNav(false)} className='py-4 text-sm text-white'>
                                     Home
                                 </li>
                             </Link>
 
-                            <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                            <li onClick={() => setNav(false)} className='py-4 text-sm text-white'>
                                 <Link href='/#residential' onClick={handleClick}> Residential      </Link>
                             </li>
 
 
-                            <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                            <li onClick={() => setNav(false)} className='py-4 text-sm text-white'>
                                 <Link href='/#commercial' onClick={handleClick}>   Commercial  </Link>
                             </li>
 
 
-                            <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                            <li onClick={() => setNav(false)} className='py-4 text-sm text-white'>
                                 <Link href='/#about' onClick={handleClick}>   About Us   </Link>
                             </li>
 
 
-                            <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                            <li onClick={() => setNav(false)} className='py-4 text-sm text-white'>
                                 <Link href='/#contact' onClick={handleClick}>  Contact Us   </Link>
                             </li>
 
