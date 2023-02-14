@@ -5,6 +5,9 @@ import bg from '../public/assets/HomePage2.jpg'
 import homePageIcon from '../public/assets/discount.png'
 import Image from 'next/image';
 import Link from 'next/link';
+import PhoneIcon from '../public/assets/phone-call.png'
+import emailIcon from '../public/assets/email1.png'
+import mapsIcon from '../public/assets/google-maps.png'
 
 import { FaSolarPanel, GiMoneyStack, FaHandHoldingUsd } from 'react-icons/fa';
 
@@ -57,6 +60,20 @@ const HomePage = () => {
                     <div className='text-white text-center   text-3xl lg:text-4xl  mt-44 Slogan md:text-4xl md:p-0 '>
 
                         <h1 className='font-semibold  px-10 py-5 '> Save Up to 40% on your electric bill </h1>
+                        <div className='md:w-auto w-full    flex justify-center items-center mt-10 md:mt-0' >
+                            <a href='#contact'>
+                                <button class="relative inline-flex items-center justify-center  overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500   dark:text-white">
+                                    <span class="relative px-10 py-2.5 transform hover:bg-blue-600 transition duration-500 hover:scale-125 text-white rounded-md ">
+
+                                        Get a Quote
+
+
+
+                                    </span>
+                                </button>
+
+                            </a>
+                        </div>
 
 
 
@@ -100,19 +117,36 @@ const HomePage = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='md:w-auto w-full    flex justify-center items-center mt-10 md:mt-0' >
-                            <button class="relative inline-flex items-center justify-center  overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
-                                <span class="relative px-10 py-2.5 transition-all ease-in duration-75 bg-white text-black rounded-md group-hover:bg-opacity-0 hover:text-white">
-                                    <Link href='#contact' onClick={handleClick}>
-                                        Contact Us
+                        <div className='md:w-auto w-full  h-28 gap-7    flex justify-center items-center mt-10 md:mt-0' >
 
-                                    </Link>
+                            <div className='  w-[24%] h-[100px] cursor-pointer'>
+                                <a href="mailto: earthenergy@gmail.com" >
+                                    <Image src={emailIcon} className="w-full h-10" >
 
-                                </span>
-                            </button>
+                                    </Image>
+                                </a>
+                            </div>
+
+
+                            <div className=' h-[100px] w-[24%] cursor-pointer'>
+                                <a href="Tel: +1(773) 733-9675" >
+                                    <Image src={PhoneIcon} className="w-full h-10" >
+
+                                    </Image>
+                                </a>
+                            </div>
+
+                            <div className=' h-[100px] w-[24%] cursor-pointer'>
+                                <a>
+                                    <Image src={mapsIcon} className="w-full h-10" ></Image>
+                                </a>
+                            </div>
+
 
 
                         </div>
+
+
 
 
 

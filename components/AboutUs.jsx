@@ -8,8 +8,8 @@ import icon3 from '../public/assets/get-money.png'
 
 const AboutUs = () => {
     return (
-        <div className='md:min-h-[100vh] min-h-screen w-full  '>
-            <div id='about' className=' rounded-xl md:px-20  min-h-[60vh] bg-cover bg-center bg-no-repeat md:bg-cover flex justify-center items-center' >
+        <div className='md:min-h-[100vh] min-h-screen w-full  bg-cover bg-center bg-no-repeat md:bg-cover   ' style={{ backgroundImage: "url('../assets/HomePage7.jpg')" }} >
+            <div id='about' className=' rounded-xl md:px-20 bg-[#00000080]  min-h-[100vh]  flex justify-center items-center'  >
                 <div className=' rounded-xl min-h-[50vh] text-center z-0  aboutUsDiv '>
                     <div className='md:px-10 pt-10 px-0 z-10 '>
                         <div className='px-5 md:px-0' >

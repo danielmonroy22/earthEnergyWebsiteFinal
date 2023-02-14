@@ -14,7 +14,7 @@ const Footer = () => {
     }
     return (
         <div class="w-full min-h-[40vh] flex items-center justify-center bg-black p-10">
-            <div class="md:w-2/3 w-full px-4 text-white flex flex-col">
+            <div class="md:w-2/3 w-full px-4 text-white flex flex-col ">
                 <div class="w-full text-7xl font-bold">
                     <h1 class="w-full md:w-2/3">How can we help you. get
                         in touch</h1>
@@ -29,6 +29,17 @@ const Footer = () => {
                         </Link>
 
                     </div>
+                </div>
+                <div className='w-full  flex items-end justify-end'>
+                    <ul className=' w-[25%] flex-block'>
+                        <li>   <a className='text-white cursor-pointer'> 1910 Park Meadows Dr, Fort Myers, FL, 33907</a> </li>
+                        <li>   <a className='text-white cursor-pointer'> earthenergy@gmail.com</a> </li>
+                        <li>   <a className='text-white cursor-pointer'> (773) 733-9675</a> </li>
+                        <li>   <a className='text-white cursor-pointer'> (310) 919-8055</a> </li>
+
+
+
+                    </ul>
                 </div>
                 <div class="flex flex-col">
                     <div class="flex mt-24 mb-12 flex-row justify-between">
