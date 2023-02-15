@@ -30,8 +30,8 @@ const Footer = () => {
 
                     </div>
                 </div>
-                <div className='w-full  flex items-end justify-end'>
-                    <ul className=' w-[25%] flex-block'>
+                <div className='w-full  flex items-end md:justify-end'>
+                    <ul className=' md:w-[25%] pt-10 md:pt-0 flex-block'>
                         <li>   <a className='text-white cursor-pointer'> 1910 Park Meadows Dr, Fort Myers, FL, 33907</a> </li>
                         <li>   <a className='text-white cursor-pointer'> earthenergy@gmail.com</a> </li>
                         <li>   <a className='text-white cursor-pointer'> (773) 733-9675</a> </li>

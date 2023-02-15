@@ -63,7 +63,7 @@ const HomePage = () => {
                         <div className='md:w-auto w-full    flex justify-center items-center mt-10 md:mt-0' >
                             <a href='#contact'>
                                 <button class="relative inline-flex items-center justify-center  overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500   dark:text-white">
-                                    <span class="relative px-10 py-2.5 transform hover:bg-blue-600 transition duration-500 hover:scale-125 text-white rounded-md ">
+                                    <span class="text-xl relative px-10 py-2.5 transform hover:bg-blue-600 transition duration-500 hover:scale-125 text-white rounded-md ">
 
                                         Get a Quote
 
@@ -119,7 +119,7 @@ const HomePage = () => {
                         </div>
                         <div className='md:w-auto w-full  h-28 gap-7    flex justify-center items-center mt-10 md:mt-0' >
 
-                            <div className='  w-[24%] h-[100px] cursor-pointer'>
+                            <div className='  md:w-[24%] h-[100px] cursor-pointer'>
                                 <a href="mailto: earthenergy@gmail.com" >
                                     <Image src={emailIcon} className="w-full h-10" >
 
@@ -128,7 +128,7 @@ const HomePage = () => {
                             </div>
 
 
-                            <div className=' h-[100px] w-[24%] cursor-pointer'>
+                            <div className=' h-[100px] md:w-[24%] cursor-pointer'>
                                 <a href="Tel: +1(773) 733-9675" >
                                     <Image src={PhoneIcon} className="w-full h-10" >
 
@@ -136,8 +136,8 @@ const HomePage = () => {
                                 </a>
                             </div>
 
-                            <div className=' h-[100px] w-[24%] cursor-pointer'>
-                                <a>
+                            <div className=' h-[100px] md:w-[24%] cursor-pointer'>
+                                <a href='https://goo.gl/maps/Rzz3ii4jvgnaTTQ86'>
                                     <Image src={mapsIcon} className="w-full h-10" ></Image>
                                 </a>
                             </div>
