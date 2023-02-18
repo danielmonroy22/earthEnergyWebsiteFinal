@@ -121,7 +121,7 @@ const HomePage = () => {
 
                             <div className='  md:w-[24%] md:h-[100px] cursor-pointer'>
                                 <a href="mailto: earthenergy@gmail.com" >
-                                    <Image src={emailIcon} className="w-full h-10" >
+                                    <Image src={emailIcon} className="w-full md:h-10 h-5" >
 
                                     </Image>
                                 </a>
