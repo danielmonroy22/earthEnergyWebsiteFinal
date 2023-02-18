@@ -119,9 +119,9 @@ const HomePage = () => {
                         </div>
                         <div className='md:w-auto w-full  h-28 gap-7 bg-red-500    flex justify-center items-center mt-10 md:mt-0' >
 
-                            <div className='  md:w-[24%] md:h-[100px] cursor-pointer'>
+                            <div className='  md:w-[24%] w-[30%] md:h-[100px] cursor-pointer'>
                                 <a href="mailto: earthenergy@gmail.com" >
-                                    <Image src={emailIcon} className="w-full md:h-10 h-5" >
+                                    <Image src={emailIcon} className="w-full h-10" >
 
                                     </Image>
                                 </a>
