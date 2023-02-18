@@ -117,9 +117,9 @@ const HomePage = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='md:w-auto w-full  h-28 gap-7    flex justify-center items-center mt-10 md:mt-0' >
+                        <div className='md:w-auto w-full  h-28 gap-7 bg-red-500    flex justify-center items-center mt-10 md:mt-0' >
 
-                            <div className='  md:w-[24%] h-[100px] cursor-pointer'>
+                            <div className='  md:w-[24%] md:h-[100px] cursor-pointer'>
                                 <a href="mailto: earthenergy@gmail.com" >
                                     <Image src={emailIcon} className="w-full h-10" >
 
@@ -128,7 +128,7 @@ const HomePage = () => {
                             </div>
 
 
-                            <div className=' h-[100px] md:w-[24%] cursor-pointer'>
+                            <div className=' md:h-[100px] md:w-[24%] cursor-pointer'>
                                 <a href="Tel: +1(773) 733-9675" >
                                     <Image src={PhoneIcon} className="w-full h-10" >
 
@@ -136,7 +136,7 @@ const HomePage = () => {
                                 </a>
                             </div>
 
-                            <div className=' h-[100px] md:w-[24%] cursor-pointer'>
+                            <div className=' md:h-[100px] md:w-[24%] cursor-pointer'>
                                 <a href='https://goo.gl/maps/Rzz3ii4jvgnaTTQ86'>
                                     <Image src={mapsIcon} className="w-full h-10" ></Image>
                                 </a>
