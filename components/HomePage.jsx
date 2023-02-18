@@ -117,7 +117,7 @@ const HomePage = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='md:w-auto w-full  h-28 gap-7 bg-red-500    flex justify-center items-center mt-10 md:mt-0' >
+                        <div className=' w-auto  h-28 gap-7 bg-red-500    flex justify-center items-center mt-10 md:mt-0' >
 
                             <div className='  md:w-[24%] w-[33%] md:h-[100px] cursor-pointer'>
                                 <a href="mailto: earthenergy@gmail.com" >
